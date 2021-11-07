@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt X3.6 Contact</title>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <!--Header mit Nav/Menu-->
+    <header>
+        <nav>
+            <!--Hamburger Menu-->
+            <div onclick="openMenu()" class="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!--Nav vom Hamburgermenu-->
+            <div id="toggleMenu" class="onclickMenu">
+                <p>X</p>
+                <ul>
+                    <li><a href="#">Weekly Recommendations</a></li>
+                    <li><a href="assets/html/contact.html">Contact</a></li>
+                    <li><a href="#">TDB</a></li>
+                </ul>
+            </div>
+            <!--Nav vom Vollbild-->
+            <h1>THE DESIGN SHOP</h1>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="#">Weekly Recommendations</a></li>
+                <li><a href="assets/html/contact.html">Contact</a></li>
+                <li><a href="#">TDB</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Section1-->
+        <section>
+            <div>
+                <img src="../img/photo-1522139137660-4248e04955b8.png" alt="">
+            </div>
+            <h2>
+                Contact Us
+            </h2>
+            <form action="">
+                <label for="">First Name</label>
+                <div>
+
+                    <input type="text" name="" id="firstName">
+                </div>
+                <label for="">Surname</label>
+                <div>
+
+                    <input type="text" name="" id="surName">
+                </div>
+                <label for="">eMail</label>
+                <div>
+                    <input type="email" name="" id="eMail">
+                </div>
+                <label for="">Pohne-Number</label>
+                <div>
+
+                    <input type="number" name="" id="number">
+                </div>
+                <label for="">Message</label>
+                <div>
+                    <input type="text" name="" id="message">
+                </div>
+
+                <div>
+
+                    <input onclick="submitContact()" class="submitButton" type="button" value="Submit">
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <article>
+                <h2>The Design Shop</h2>
+                <p>Carefully cuated online design store. found and designed by <span>Ruby Bacanovic</span> </p>
+            </article>
+            <article>
+                <h2>Contact</h2>
+                <a href="#">Email us</a>
+                <a href="#">Work with us</a>
+            </article>
+            <article>
+                <h2></h2>
+                <p><a href="#">Click</a> here to subscribe. Dont wory. We hate spam too.</p>
+            </article>
+            <article>
+                <h2>Find Us Here</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <p>2019 The Design Shop</p>
+        <p> The Disign Blog</p>
+    </footer>
+</body>
+
+</html>

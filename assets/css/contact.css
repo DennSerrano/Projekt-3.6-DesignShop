@@ -1,0 +1,145 @@
+/* ===============================
+           GeneralStyles
+=============================== */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/* ==============Fonts & Color==============  */
+
+/* Font: Karla
+Farbe: #323A45 / #848484 */
+
+/* ===============================
+           Header Nav/Menu
+=============================== */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 5vw;
+}
+
+header nav h1 {}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0 2vw;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* =========Hamburger Menu========== */
+
+.hamburgerMenu {
+    display: none;
+    margin: 0 0 0 5vw;
+}
+
+.hamburgerMenu span {
+    display: block;
+    width: 50px;
+    height: 5px;
+    margin: 5px 40px 5px 0;
+    background-color: black
+}
+
+.onclickMenu {
+    display: none;
+    background-color: #9FA2A7;
+    padding: 2vh;
+    border-radius: 10px;
+}
+
+.onclickMenu ul {
+    display: block;
+}
+
+.onclickMenu ul li {
+    padding: 5px;
+}
+
+.onclickMenu ul li a {
+    font-family: tiemosHeadline;
+}
+
+.showMenu {
+    display: block;
+}
+
+/* =================
+Main
+================= */
+
+/* ========section 1============ */
+
+main section div img {
+    width: 10%;
+    ;
+}
+
+main section form {
+    box-shadow: 2px 2px 2px 2px rgb(109, 109, 109);
+    width: 40vw;
+    margin: 0 auto;
+    text-align: center;
+    background: rgb(236, 231, 230);
+    background: linear-gradient(133deg, rgba(236, 231, 230, 1) 33%, rgba(182, 182, 166, 1) 76%);
+    border-radius: 10px;
+    padding-top: 3vh;
+}
+
+main section form div {
+    margin: 0 0 3vh 0;
+}
+
+main section form label {
+    font-size: 20px;
+    font-family: tiemosHeadline;
+    color: black;
+}
+
+main section form div input {
+    padding: 1vh 6vw;
+}
+
+.submitButton {
+    background: rgb(236, 84, 64);
+    background: linear-gradient(346deg, rgba(236, 84, 64, 1) 33%, rgba(245, 246, 66, 1) 68%);
+    margin: 2vh 0 5vh 0;
+}
+
+.submitButton:hover {
+    background: rgb(236, 84, 64);
+    background: linear-gradient(166deg, rgba(236, 84, 64, 1) 33%, rgba(245, 246, 66, 1) 68%);
+}
+
+/* ===============================
+           mediaQueries
+=============================== */
+
+/* =========Hamburger Menu========== */
+
+@media screen and (max-width: 600px) {
+    .hamburgerMenu {
+        display: block
+    }
+    header nav ul {
+        display: none;
+    }
+}
