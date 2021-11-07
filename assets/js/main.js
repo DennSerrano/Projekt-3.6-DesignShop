@@ -11,6 +11,14 @@ function submitContact() {
     console.log(number.value)
     console.log(message.value)
 }
+
+let transitionMenu = document.getElementById("transitionMenu")
 function openMenu() {
-    let toggleMenu = document.getElementById("toggleMenu")
-    toggleMenu.classList.toggle("showMenu")
+    transitionMenu.style.height = "100%"
+    transitionMenu.style.opacity = "1"
+}
+
+function closeMenu() {
+    transitionMenu.style.height = "0"
+    transitionMenu.style.opacity = "0"
+}

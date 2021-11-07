@@ -6,74 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt X3.6 Contact</title>
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body>
     <!--Header mit Nav/Menu-->
     <header>
+        <!--Hamburger Menu-->
+        <div onclick="openMenu()" class="hamburgerMenu">
+            <h2> THE DESIGN SHOP</h2>
+            <div onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <!--Nav vom Vollbild-->
         <nav>
-            <!--Hamburger Menu-->
-            <div onclick="openMenu()" class="hamburgerMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <!--Nav vom Hamburgermenu-->
-            <div id="toggleMenu" class="onclickMenu">
-                <p>X</p>
-                <ul>
-                    <li><a href="#">Weekly Recommendations</a></li>
-                    <li><a href="assets/html/contact.html">Contact</a></li>
-                    <li><a href="#">TDB</a></li>
-                </ul>
-            </div>
-            <!--Nav vom Vollbild-->
             <h1>THE DESIGN SHOP</h1>
             <ul>
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="#">Weekly Recommendations</a></li>
-                <li><a href="assets/html/contact.html">Contact</a></li>
-                <li><a href="#">TDB</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+                <li><a href="#"><span>T</span><span>D</span><span>B</span></a></li>
             </ul>
         </nav>
     </header>
+    <!--TransitionMenu-->
+    <div id="transitionMenu" class="onclickMenu">
+        <nav>
+            <i onclick="closeMenu()" class="far fa-times-circle"></i>
+            <ul>
+
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="#">"Weekly Recommendations"</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#"><span>T</span><span>D</span><span>B</span></a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
         <!--Section1-->
         <section>
-            <div>
-                <img src="../img/photo-1522139137660-4248e04955b8.png" alt="">
-            </div>
             <h2>
                 Contact Us
             </h2>
-            <form action="">
-                <label for="">First Name</label>
+            <form action="ContactUs">
+                <label for="firstName">First Name</label>
                 <div>
-
-                    <input type="text" name="" id="firstName">
+                    <input type="text" name="firstName" id="firstName">
                 </div>
-                <label for="">Surname</label>
+                <label for="surName">Surname</label>
                 <div>
-
-                    <input type="text" name="" id="surName">
+                    <input type="text" name="sureName" id="surName">
                 </div>
-                <label for="">eMail</label>
+                <label for="eMail">eMail</label>
                 <div>
-                    <input type="email" name="" id="eMail">
+                    <input type="email" name="eMail" id="eMail">
                 </div>
-                <label for="">Pohne-Number</label>
+                <label for="number">Pohne-Number</label>
                 <div>
-
-                    <input type="number" name="" id="number">
+                    <input type="number" name="number" id="number">
                 </div>
-                <label for="">Message</label>
+                <label for="message">Message</label>
                 <div>
-                    <input type="text" name="" id="message">
+                    <input type="text" name="message" id="message">
                 </div>
-
                 <div>
-
                     <input onclick="submitContact()" class="submitButton" type="button" value="Submit">
                 </div>
 
@@ -84,16 +85,22 @@
         <section>
             <article>
                 <h2>The Design Shop</h2>
-                <p>Carefully cuated online design store. found and designed by <span>Ruby Bacanovic</span> </p>
+                <p>Carefully cuated online design store, <br> founded and designed by <span class="extraColor1">Ruby
+                        Bacanovic</span> </p>
             </article>
-            <article>
+            <article class="contactPosition">
                 <h2>Contact</h2>
-                <a href="#">Email us</a>
-                <a href="#">Work with us</a>
+                <p><a href="assets/html/contact.html">Email us</a></p>
+                <p><a href="assets/html/contact.html">Work with us</a></p>
             </article>
             <article>
-                <h2></h2>
-                <p><a href="#">Click</a> here to subscribe. Dont wory. We hate spam too.</p>
+                <h2>Newsletter</h2>
+                <p><a href="#">Click</a> here to
+                    <span class="extraColor2">subscribe.</span>
+                </p>
+                <p>
+                    <span class="cursiv">Dont wory.</span>We hate spam too.
+                </p>
             </article>
             <article>
                 <h2>Find Us Here</h2>
@@ -104,10 +111,13 @@
                 </ul>
             </article>
         </section>
+        <p class="copyRight">&copy; 2019 The Design Shop
+            <span class="dotSize">•</span> The Disign Blog
+        </p>
 
-        <p>2019 The Design Shop</p>
-        <p> The Disign Blog</p>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
