@@ -127,7 +127,7 @@ main section h2 {
 main section form {
     box-shadow: 2px 2px 2px 2px rgb(109, 109, 109);
     margin: 10vh auto;
-    width: 40%;
+    width: 50%;
     text-align: center;
     background: rgb(158, 158, 158);
     background: radial-gradient(circle, rgba(158, 158, 158, 0.8939950980392157) 0%, rgba(0, 0, 0, 1) 100%);
